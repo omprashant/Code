@@ -1,0 +1,52 @@
+Que -01-->
+
+  A metacharacter is a character that has a special meaning (instead of a literal meaning) to a computer program, such as a shell interpreter or a regular expression engine.
+example : >  >>  <  *  []  ?  ;  |  ||  &&  ()  $  #  &  \
+
+Regular Expression :
+
+example :  ^-  ---- match the starting of the beganing of the line
+	   $   --- match end of line
+	   *   --- 0 or more occurance of previouus character
+	   .  --- to match any character
+	   [] --- Range
+	   <word>  -- Actual word finding
+
+FIND ALL THE FILE IN GIVEN DIRECTORY  : ls -l grep ^-
+
+
+
+
+Que -02-->
+
+Grep Examples : 
+
+	1.  grep "string_literal" filename     // for finding string_literal into a filename
+	2.  grep "string_literal" filename.*   // for searching string_literal into many files having different extension of same pattern
+	3.  grep -i "string_literal" filename  // for seraching string without case sensitive(takes upper and lower case both)
+	4.  grep "string.*empty" filename.*    // match a part of word and shows whole words.
+	5.  grep -A 3 "string" filename     // Display n file after match
+	 .  -i for incase senstive
+
+	6.  grep -iw "is" abc.*    // shows all lines having is words.
+	 . -A   // prints n lines after string line,  -B prints n line before string line.
+
+cat filename // open the file in the terminal.
+
+awk : for print the data into a file in a specific format
+
+	1. awk '{print $1,$2}' filename   //  print column 1 and column 2 data of file. used in data processing.
+	2. awk '{print $4,$2}' filename
+	3. awk '{print $1.$2}' filename    //removes space between column 1 and 2 and print 
+	4. awk '/Test/ {print}' filename    // print all lines having Test string.
+	5. awk '/[0-9] {print}' filename   // print all lines having any numeric value.
+
+ls -p | grep -v /   //  print every thing except directories.
+
+========================================================================================================================
+CHECK UBUNTU VERSION AND BITS : uname -a , uname -m , arch , file /sbin/init , System Setting-->Details-->Overview
+========================================================================================================================
+
+========================================================================================================================
+
+========================================================================================================================
